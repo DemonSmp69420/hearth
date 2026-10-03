@@ -10,6 +10,12 @@ you choose.
 [docs/ROADMAP.md](docs/ROADMAP.md) for the milestone plan and the
 changelog for what shipped.
 
+> **⚠️ AI-generated software.** This entire project — every line of code,
+> documentation, and design decision — was created by AI language models
+> (Claude/ZCode and other agents), directed by a human with no programming
+> background. It works and is tested, but it has never been security-audited
+> by a human expert. Use it knowing that.
+
 ## Highlights
 
 - **Chat as a tree** — swipes, regenerate-any-message, edit-as-branch,
