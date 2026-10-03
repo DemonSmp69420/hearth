@@ -1,0 +1,44 @@
+{
+  "name": "hearth",
+  "private": true,
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "version": "0.8.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "format": "prettier --write .",
+    "icons": "node scripts/make-icons.mjs",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@material/material-color-utilities": "^0.3.0",
+    "@tanstack/react-query": "^5.104.1",
+    "@tanstack/react-virtual": "^3.14.13",
+    "@tauri-apps/api": "^2.1.0",
+    "@tauri-apps/plugin-sql": "^2.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sql.js": "^1.14.2",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.1.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/sql.js": "^1.4.11",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "prettier": "^3.4.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.18.0",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  }
+}

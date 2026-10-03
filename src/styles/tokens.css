@@ -1,0 +1,64 @@
+/* Hearth — M3 design tokens. Color roles are overwritten at runtime by the
+   theme engine (src/theme/palette.ts); these are the Violet Dusk fallbacks so
+   the shell is styled before React hydrates. */
+:root {
+  --md-sys-color-primary: #6750a4;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #eaddff;
+  --md-sys-color-on-primary-container: #21005d;
+  --md-sys-color-secondary-container: #e8def8;
+  --md-sys-color-on-secondary-container: #1d192b;
+  --md-sys-color-tertiary: #7d5260;
+  --md-sys-color-tertiary-container: #ffd8e4;
+  --md-sys-color-on-tertiary-container: #31111d;
+  --md-sys-color-error: #b3261e;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #f9dedc;
+  --md-sys-color-on-error-container: #410e0b;
+  --md-sys-color-background: #141218;
+  --md-sys-color-on-background: #e5e1e6;
+  --md-sys-color-surface: #141218;
+  --md-sys-color-on-surface: #e5e1e6;
+  --md-sys-color-surface-variant: #49454f;
+  --md-sys-color-on-surface-variant: #cac4d0;
+  --md-sys-color-outline: #938f99;
+  --md-sys-color-outline-variant: #49454f;
+  --md-sys-color-surface-container-lowest: #0f0d13;
+  --md-sys-color-surface-container-low: #1c1b1f;
+  --md-sys-color-surface-container: #201f23;
+  --md-sys-color-surface-container-high: #2b2930;
+  --md-sys-color-surface-container-highest: #36343b;
+  --md-sys-color-inverse-surface: #e5e1e6;
+  --md-sys-color-inverse-on-surface: #322f37;
+  --md-sys-color-inverse-primary: #d0bcff;
+
+  /* Shape scale */
+  --md-sys-shape-corner-xs: 4px;
+  --md-sys-shape-corner-sm: 8px;
+  --md-sys-shape-corner-md: 12px;
+  --md-sys-shape-corner-lg: 16px;
+  --md-sys-shape-corner-xl: 28px;
+  --md-sys-shape-corner-full: 999px;
+
+  /* Type scale (reading font for future chat bodies) */
+  --md-sys-font-brand: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  --md-sys-font-plain: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  --md-sys-font-reading: Georgia, 'Times New Roman', serif;
+  --md-sys-typescale-display-sm: 600 36px/44px var(--md-sys-font-brand);
+  --md-sys-typescale-title-lg: 400 22px/28px var(--md-sys-font-brand);
+  --md-sys-typescale-title-md: 500 16px/24px var(--md-sys-font-brand);
+  --md-sys-typescale-body-lg: 400 16px/24px var(--md-sys-font-plain);
+  --md-sys-typescale-body-md: 400 14px/20px var(--md-sys-font-plain);
+  --md-sys-typescale-label-lg: 500 14px/20px var(--md-sys-font-brand);
+  --md-sys-typescale-label-md: 500 12px/16px var(--md-sys-font-brand);
+
+  /* Elevation */
+  --md-sys-elevation-1: 0 1px 2px rgb(0 0 0 / 0.3), 0 1px 3px 1px rgb(0 0 0 / 0.15);
+  --md-sys-elevation-2: 0 1px 2px rgb(0 0 0 / 0.3), 0 2px 6px 2px rgb(0 0 0 / 0.15);
+  --md-sys-elevation-3: 0 4px 8px 3px rgb(0 0 0 / 0.15), 0 1px 3px rgb(0 0 0 / 0.3);
+
+  /* Motion */
+  --md-sys-motion-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --md-sys-motion-duration-200: 200ms;
+  --md-sys-motion-duration-500: 500ms;
+}
