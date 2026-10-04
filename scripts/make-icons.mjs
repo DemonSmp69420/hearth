@@ -38,8 +38,8 @@ function png(size) {
   ihdr.writeUInt32BE(size, 0);
   ihdr.writeUInt32BE(size, 4);
   ihdr[8] = 8; // bit depth
-  ihdr[9] = 2; // truecolor
-  const raw = Buffer.alloc((size * 3 + 1) * size);
+  ihdr[9] = 6; // color type: RGBA — Tauri's macOS/Linux codegen rejects RGB-only icons
+  const raw = Buffer.alloc((size * 4 + 1) * size);
   let o = 0;
   for (let y = 0; y < size; y++) {
     raw[o++] = 0; // filter: none
@@ -47,6 +47,7 @@ function png(size) {
       raw[o++] = RGB[0];
       raw[o++] = RGB[1];
       raw[o++] = RGB[2];
+      raw[o++] = 0xff; // opaque alpha
     }
   }
   return Buffer.concat([
